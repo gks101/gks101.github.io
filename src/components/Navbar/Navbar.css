@@ -1,0 +1,26 @@
+nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul li {
+    list-style: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    padding: 1rem 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--inactive-color);
+    transition: .3s;
+}
+
+li.is-active, li:hover {
+    border-bottom: 2px solid var(--theme-color);
+}
+
+li.is-active a, li:hover a {
+    color: var(--theme-color);
+}
